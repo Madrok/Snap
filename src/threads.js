@@ -2290,7 +2290,10 @@ Process.prototype.reportURL = function (url) {
                 // allow requests from locally loaded sources
                 url = 'https://' + url;
             } else {
-                url = location.protocol + '//' + url;
+                if(url.indexOf('/') == 0)
+                    url = location.protocol + '//' + location.host + url;
+                else
+                    url = location.protocol + '//' + url;
             }
         }
         this.httpRequest = new XMLHttpRequest();
