@@ -1,5 +1,16 @@
 
-Snap! Build Your Own Blocks
+Snap! Build Your Own Blocks for ev3dev
+
+To setup, first ssh into your ev3dev robot, then run the conmand:
+
+```bash
+$ curl -L https://raw.githubusercontent.com/Madrok/Snap/ev3dev/setup.sh | sh
+```
+
+Documentation for ev3dev is at
+https://ev3dev-lang.readthedocs.io/en/latest/
+http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-jessie/motors.html
+
 
 http://snap.berkeley.edu
 
